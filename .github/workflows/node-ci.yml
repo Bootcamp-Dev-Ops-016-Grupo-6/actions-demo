@@ -17,7 +17,7 @@ jobs:
       - name: Ver entorno
         env:
           NODE_ENV: ${{ secrets.NODE_ENV }}
-        run: echo "Entorno actual: ${{NODE_ENV}}"
+        run: echo 'Entorno actual: "$NODE_ENV"'
 
       - name: Usar Node.js
         uses: actions/setup-node@v3
